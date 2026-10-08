@@ -1,0 +1,603 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #0b1f33;
+}
+
+
+/* =========================
+   COMMON CONTAINER
+========================= */
+
+.services-admin,
+.add-service-page {
+    width: 92%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.services-header,
+.add-service-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 35px;
+}
+
+.services-header span,
+.add-service-header span {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #db8d0b;
+}
+
+.services-header h1,
+.add-service-header h1 {
+    margin-top: 8px;
+    font-size: 32px;
+}
+
+.services-header p,
+.add-service-header p {
+    margin-top: 8px;
+    color: #667085;
+}
+.service-admin-image {
+    width: 75px;
+  
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+}
+
+
+/* =========================
+   ADD SERVICE BUTTON
+========================= */
+
+.add-service-btn,
+.save-service-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 13px 22px;
+
+    background:   #f5a623;
+    color: #ffffff;
+
+    border: none;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.add-service-btn:hover,
+.save-service-btn:hover {
+    background:   #f5a623;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   TABLE BOX
+========================= */
+
+.services-table-box {
+    background: #ffffff;
+
+    border: 1px solid #e4e8ec;
+
+    box-shadow: 0 10px 30px rgba(11, 31, 51, .06);
+
+    overflow-x: auto;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.services-table-box table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.services-table-box th {
+    padding: 18px 20px;
+
+    background: #0b1f33;
+
+    color: #ffffff;
+
+    text-align: left;
+
+    font-size: 13px;
+}
+
+.services-table-box td {
+    padding: 18px 20px;
+
+    border-bottom: 1px solid #edf0f2;
+
+    vertical-align: middle;
+
+    font-size: 14px;
+}
+
+.services-table-box tbody tr {
+    transition: .25s;
+}
+
+.services-table-box tbody tr:hover {
+    background: #f8fafb;
+}
+
+
+/* =========================
+   SERVICE IMAGE
+========================= */
+
+.service-admin-image {
+    width: 75px;
+    height: 55px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 4px;
+}
+
+.services-table-box td strong {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #0b1f33;
+}
+
+.services-table-box td p {
+    max-width: 300px;
+
+    color: #667085;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.status-active,
+.status-inactive {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.status-active {
+    background: #e7f5ef;
+    color: #28704f;
+}
+
+.status-inactive {
+    background: #f3eeee;
+    color: #a33a3a;
+}
+
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.service-actions {
+    white-space: nowrap;
+}
+
+.edit-btn,
+.delete-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 8px 12px;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    margin-right: 5px;
+
+    transition: .25s;
+}
+
+.edit-btn {
+    background: #eef4f7;
+    color:   #f5a623;
+}
+
+.edit-btn:hover {
+    background:   #f5a623;
+    color: #ffffff;
+}
+
+.delete-btn {
+    background: #fceeee;
+    color: #c0392b;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+    color: #ffffff;
+}
+
+
+/* =========================
+   ADD SERVICE FORM
+========================= */
+
+.service-form-box {
+    max-width: 850px;
+
+    background: #ffffff;
+
+    padding: 40px;
+
+    border: 1px solid #e4e8ec;
+
+    box-shadow: 0 10px 30px rgba(11, 31, 51, .06);
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #0b1f33;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #d9dee3;
+
+    background: #ffffff;
+
+    color: #0b1f33;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: .25s;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color:   #f5a623;
+
+    box-shadow: 0 0 0 3px rgba(245, 166, 35, .08);
+}
+
+.form-group small {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #8a929b;
+
+    font-size: 12px;
+}
+
+
+/* FILE INPUT */
+
+.form-group input[type="file"] {
+    padding: 10px;
+
+    background: #f8fafb;
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.back-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 12px 20px;
+
+    background: #eef1f3;
+
+    color: #0b1f33;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition: .3s;
+}
+
+.back-btn:hover {
+    background:   #f5a623;
+    color: #ffffff;
+}
+
+
+/* =========================
+   RESPONSIVE & MEDIA QUERIES
+========================= */
+
+@media (max-width: 992px) {
+    .services-admin,
+    .add-service-page {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .services-header,
+    .add-service-header {
+        padding-right: 50px; /* Space for top-right toggle button */
+    }
+}
+
+@media (max-width: 768px) {
+
+    .services-header,
+    .add-service-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .services-header h1,
+    .add-service-header h1 {
+        font-size: 24px;
+    }
+
+    .service-form-box {
+        padding: 20px 15px;
+        border-radius: 8px;
+    }
+
+    .services-table-box table {
+        min-width: 700px; /* Enable clean touch horizontal scrolling */
+    }
+
+    .services-table-box th,
+    .services-table-box td {
+        padding: 12px 14px;
+        font-size: 13px;
+    }
+
+    .save-service-btn,
+    .add-service-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .back-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .services-header h1,
+    .add-service-header h1 {
+        font-size: 20px;
+    }
+
+    .service-form-box {
+        padding: 15px 12px;
+    }
+
+    .form-group label {
+        font-size: 13px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 11px 12px;
+        font-size: 13px;
+    }
+}
+
+/* =========================
+   DELETE CONFIRMATION
+========================= */
+
+.delete-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 15px;
+    background: #f4f6f8;
+}
+
+
+.delete-box {
+    width: 100%;
+    max-width: 480px;
+    background: #ffffff;
+    padding: 45px 35px;
+    text-align: center;
+    border: 1px solid #e4e8ec;
+    border-radius: 8px;
+    box-shadow: 0 20px 50px rgba(11,31,51,.10);
+}
+
+
+.delete-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #fceeee;
+    color: #c0392b;
+    font-size: 28px;
+}
+
+
+.delete-box h1 {
+    margin-bottom: 12px;
+    color: #0b1f33;
+    font-size: 26px;
+}
+
+
+.delete-box p {
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+.delete-box strong {
+    color: #0b1f33;
+}
+
+
+.warning-text {
+    margin-top: 8px;
+    color: #c0392b !important;
+    font-size: 13px !important;
+}
+
+
+/* BUTTONS */
+
+.delete-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+
+.delete-actions form {
+    margin: 0;
+}
+
+
+.confirm-delete-btn,
+.cancel-delete-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+.confirm-delete-btn {
+    background: #c0392b;
+    color: #ffffff;
+}
+
+
+.confirm-delete-btn:hover {
+    background: #962d22;
+}
+
+
+.cancel-delete-btn {
+    background: #e9eeee;
+    color: #0b1f33;
+}
+
+
+.cancel-delete-btn:hover {
+    background: #c0392b;
+    color: #ffffff;
+}
+
+@media (max-width: 480px) {
+    .delete-box {
+        padding: 30px 20px;
+    }
+
+    .delete-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .delete-actions form,
+    .confirm-delete-btn,
+    .cancel-delete-btn {
+        width: 100%;
+    }
+}

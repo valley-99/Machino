@@ -1,0 +1,289 @@
+/* =====================================
+   CONTACT MESSAGES
+===================================== */
+
+.contact-page {
+    /* Padding and background handled by .dashboard-main */
+    width: 100%;
+}
+
+
+/* HEADER */
+
+.page-header {
+
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  
+}
+
+.page-header span {
+
+    color: #f5a623;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+.page-header h1 {
+
+    color: #0b1f33;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 32px;
+
+    margin: 8px 0;
+}
+
+.page-header p {
+
+    color: #667085;
+
+    margin: 0;
+}
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: #0b1f33;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #f5a623;
+    color: #0b1f33;
+}
+
+/* TABLE BOX */
+
+.message-table-box {
+
+    background: white;
+
+    border-radius: 4px;
+
+    overflow-x: auto;
+
+    box-shadow:
+        0 8px 30px rgba(11,31,51,.07);
+}
+
+
+/* TABLE */
+
+.message-table-box table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 1100px;
+}
+
+
+/* HEADER */
+
+.message-table-box th {
+
+    background: #0b1f33;
+
+    color: white;
+
+    padding: 16px 14px;
+
+    text-align: left;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+}
+
+
+/* CELLS */
+
+.message-table-box td {
+
+    padding: 15px 14px;
+
+    border-bottom:
+        1px solid #e9edf1;
+
+    color: #475467;
+
+    font-size: 13px;
+
+    vertical-align: top;
+}
+
+
+/* HOVER */
+
+.message-table-box tbody tr:hover {
+
+    background: #fffaf1;
+}
+
+
+/* SERVICE */
+
+.service-badge {
+
+    display: inline-block;
+
+    padding: 6px 9px;
+
+    background: #fff3d9;
+
+    color: #b36f00;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================
+   ACTION BUTTONS
+===================================== */
+
+.action-buttons {
+
+    display: flex;
+
+    gap: 8px;
+
+    white-space: nowrap;
+}
+
+
+/* EDIT */
+
+.edit-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 7px 11px;
+
+    background: #fff3d9;
+
+    color: #b36f00;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    transition: .3s;
+}
+
+
+.edit-btn:hover {
+
+    background: #f5a623;
+
+    color: #0b1f33;
+}
+
+
+/* DELETE */
+.delete-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 7px 11px;
+
+    background: #feecec;
+
+    color: #c0392b;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    transition: .3s;
+}
+
+.delete-btn:hover {
+
+    background: #c0392b;
+
+    color: #ffffff;
+}
+
+.message-cell {
+    max-width: 260px;
+    word-break: break-word;
+}
+
+
+/* =====================================
+   RESPONSIVE MEDIA QUERIES
+===================================== */
+
+@media (max-width: 992px) {
+    .page-header {
+        padding-right: 55px; /* Prevent header text from overlapping toggle button */
+    }
+
+    .message-table-box {
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .page-header h1 {
+        font-size: 24px;
+    }
+
+    .message-table-box table {
+        min-width: 800px;
+    }
+
+    .message-table-box th,
+    .message-table-box td {
+        padding: 12px 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header h1 {
+        font-size: 20px;
+    }
+}
+
+
+
+

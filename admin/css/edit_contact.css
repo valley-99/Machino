@@ -1,0 +1,275 @@
+/* =========================================
+   EDIT CONTACT PAGE
+========================================= */
+
+.edit-contact-page {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 40px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 10px 35px rgba(11, 31, 51, 0.08);
+
+    border-top: 4px solid #f5a623;
+}
+
+.edit-contact-page h1 {
+    font-family: "Montserrat", sans-serif;
+
+    color: #0b1f33;
+
+    font-size: 30px;
+
+    margin-bottom: 30px;
+}
+
+
+/* FORM */
+
+.edit-contact-page form {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+/* LABEL */
+
+.edit-contact-page label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #0b1f33;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+/* INPUT */
+
+.edit-contact-page input,
+.edit-contact-page textarea {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #d9dee5;
+
+    background: #f9fafb;
+
+    color: #344054;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+    transition: 0.3s;
+}
+
+
+/* TEXTAREA */
+
+.edit-contact-page textarea {
+    resize: vertical;
+
+    min-height: 140px;
+}
+
+
+/* FULL WIDTH TEXTAREA */
+
+.edit-contact-page textarea {
+    grid-column: 1 / -1;
+}
+
+
+/* FOCUS */
+
+.edit-contact-page input:focus,
+.edit-contact-page textarea:focus {
+
+    border-color: #f5a623;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px rgba(245, 166, 35, 0.10);
+}
+
+
+/* =========================================
+   UPDATE BUTTON
+========================================= */
+
+.update-btn {
+
+    grid-column: 1 / -1;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    width: fit-content;
+
+    padding: 14px 24px;
+
+    border: none;
+
+    background: #0b1f33;
+
+    color: #ffffff;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: .5px;
+
+    transition: .3s;
+}
+
+.update-btn i {
+    color: #f5a623;
+
+    transition: .3s;
+}
+
+.update-btn:hover {
+
+    background: #f5a623;
+
+    color: #0b1f33;
+}
+
+.update-btn:hover i {
+
+    color: #0b1f33;
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   CANCEL BUTTON
+========================================= */
+
+.cancel-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    width: fit-content;
+
+    padding: 13px 20px;
+
+    background: #eef1f4;
+
+    color: #344054;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    transition: .3s;
+}
+
+.cancel-btn:hover {
+
+    background: #dfe4e9;
+
+    color: #0b1f33;
+}
+
+
+/* BUTTON AREA */
+
+.edit-buttons {
+
+    grid-column: 1 / -1;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 5px;
+}
+
+
+/* =========================================
+   MOBILE & TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 992px) {
+    .edit-contact-page {
+        margin: 20px auto;
+        padding: 30px 25px;
+    }
+
+    .edit-contact-page h1 {
+        padding-right: 50px; /* Prevent header text from overlapping toggle button */
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .edit-contact-page {
+        margin: 10px auto;
+        padding: 20px 15px;
+    }
+
+    .edit-contact-page h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .edit-contact-page form {
+        grid-template-columns: 1fr;
+    }
+
+    .edit-contact-page textarea {
+        grid-column: auto;
+    }
+
+    .update-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .cancel-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .edit-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+}

@@ -1,0 +1,28 @@
+.back-dashboard {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    padding: 10px 16px;
+    background: #0b1f33;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.back-dashboard:hover {
+    background: #f5a623;
+    color: #0b1f33;
+}
+
+@media (max-width: 768px) {
+    .back-dashboard {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
